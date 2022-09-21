@@ -3,7 +3,7 @@
 /* eslint-disable prefer-destructuring */
 
 const { default: fetch } = require('node-fetch')
-const { getUsersCollection } = require('../mongo')
+const { getUsersCollection } = require('../mongo').default
 const { FB_APP_ID, FB_CLIENT_SECRET } = require('../common')
 const { createUserOrLogin, setAccessTokenCookie } = require('../auth/auth')
 

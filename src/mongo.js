@@ -1,5 +1,6 @@
 // @ts-check
 
+// @ts-ignore
 const { MongoClient } = require('mongodb')
 
 const { MONGO_PASSWORD, MONGO_CLUSTER, MONGO_USER, MONGO_DBNAME } = process.env

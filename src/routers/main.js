@@ -3,7 +3,7 @@
 const express = require('express')
 
 const { APP_CONFIG_JSON } = require('../common')
-const { getUsersCollection } = require('../mongo')
+const { getUsersCollection } = require('../mongo').default
 
 const router = express.Router()
 

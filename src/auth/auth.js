@@ -1,6 +1,6 @@
 // @ts-check
 
-const {v4: uuidv4} = require('uuid')
+const { v4: uuidv4 } = require('uuid')
 const { signJWT } = require('./jwt')
 const { getUsersCollection } = require('../mongo')
 
@@ -61,7 +61,7 @@ async function createUserOrLogin({
   })
   return {
     userId,
-    accessToken: await signJWT(userId)
+    accessToken: await signJWT(userId),
   }
 }
 
@@ -85,6 +85,7 @@ async function encryptPassword(password) {
     // TODO
   })
 }
+
 
 /**
  * @param {string} plainText

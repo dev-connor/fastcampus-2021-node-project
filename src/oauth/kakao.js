@@ -20,7 +20,7 @@ const { createUserOrLogin, setAccessTokenCookie } = require('../auth/auth')
 /**
  * @typedef KakaoAccount
  * @property {string} email
- * @property {KakaoProㅂfile} profile
+ * @property {KakaoProfile} profile
  */
 
 /**
